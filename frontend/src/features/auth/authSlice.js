@@ -65,6 +65,7 @@ export const authSlice = createSlice({
                 state.isLoading = false
                 state.isError = true
                 state.user = null
+                state.message = action.payload
             })
             .addCase(logout.fulfilled, (state, action) => {
                 state.user = null
@@ -81,6 +82,7 @@ export const authSlice = createSlice({
                 state.isLoading = false
                 state.isError = true
                 state.user = null
+                state.message = action.payload
             })
     }
 })
