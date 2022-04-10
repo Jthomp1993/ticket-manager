@@ -8,7 +8,7 @@ import BackButton from '../components/BackButton';
 
 function NewTicket() {
     const { user } = useSelector((state) => state.auth);
-    const { isError, isSuccess, isLoading, message } = useSelector((state) => state.ticket);
+    const { isError, isSuccess, isLoading, message } = useSelector((state) => state.tickets);
     const [name] = useState(user.name);
     const [email] = useState(user.email);
     const [product, setProduct] = useState('');
