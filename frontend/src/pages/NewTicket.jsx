@@ -83,4 +83,4 @@ function NewTicket() {
     )
 }
 
-export default NewTicket
+export default NewTicket;
